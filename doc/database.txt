@@ -1,0 +1,27 @@
+VtcCfgTemp          vtc公共配置模板信息
+VtcCfgTempSelf      vtc私有配置模板信息
+virCfgContent       vtc所有模板内容
+
+njiContent          vtc实例内容
+njiInfo             vtc实例信息
+njiowners           vtc实例拥有者信息
+
+iniContent          ini实例内容
+iniInfo             ini实例信息
+iniowners           ini实例拥有者信息
+
+reginfos            云注册内容
+resourcemanagers    云注册信息
+
+tarInfo             tar信息
+tarInstance         tar内容
+
+atsInfo             ats信息
+atsContent          ats内容
+
+tarContent          删除
+tmmContent          删除
+
+
+两个删除，一个重命名
+删除 mysql snvisource表

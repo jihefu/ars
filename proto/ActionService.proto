@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package com.langjie.sofa.rpc.Action;
+
+service ActionService {
+    rpc show (ShowRequest) returns (Response) {}
+    rpc update (UpdateRequest) returns (Response) {}
+    rpc create (UpdateRequest) returns (Response) {}
+    rpc destroy (ShowRequest) returns (Response) {}
+}
+
+message ShowRequest {
+    int32 sn = 1;
+}
+
+message UpdateRequest {
+    int32 sn = 1;
+    int32 mid = 2;
+    int32 regCode = 3;
+    int32 authOperKey = 4;
+    string validDate = 5;
+    string regDate = 6;
+    string regPerson = 7;
+    int32 appRegCode = 8;
+    int32 appAuthOperKey = 9;
+    string appValidDate = 10;
+    string appRegDate = 11;
+    string appRegPerson = 12;
+}
+
+message Response {
+    string code = 1;
+    string msg = 2;
+    string data = 3;
+}
